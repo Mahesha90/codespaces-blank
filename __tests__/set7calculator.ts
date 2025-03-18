@@ -1,5 +1,6 @@
 //import {Calculator} from "../caculator1";
-import {Calculator} from "../calculator2";
+//import {Calculator} from "../calculator2";
+import {Calculator} from "../calculator3";
 
 let calcobj:Calculator=null;
 
@@ -8,7 +9,7 @@ beforeEach(() => {
 });
 
 test('empty init', () => {
-    expect(calcobj.getPanelContents()).toBe("");
+    expect(calcobj.getPanelContents()).toBe("0");
  });
 
 test('simple input', ()=>{
@@ -31,4 +32,11 @@ test('multiple symbols input', ()=>{
    calcobj.pressButton('3');
    calcobj.pressButton('2');
    expect(calcobj.getPanelContents()).toBe("32");
+});
+
+test('clear panel', () => {
+   calcobj.pressButton('3');
+   calcobj.pressButton('2');
+   calcobj.pressButton('C');
+   expect(calcobj.getPanelContents()).toBe("0");
 });
