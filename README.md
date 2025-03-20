@@ -2,3 +2,5 @@ https://docs.google.com/document/d/1zwZdzgXkrynoVdEnJ21cvfwYGHKL96mPrRqsMhB5KFU/
 
 https://taltech-coding.gitlab.io/prog2/testing/16_testimine.html
 
+https://meet.google.com/kck-qhhy-gcj
+
